@@ -1,0 +1,190 @@
+* {box-sizing: border-box}
+
+body {
+  background: rgb(146,45,253);
+background: linear-gradient(344deg, rgba(146,45,253,1) 13%, rgba(34,193,195,1) 100%);
+
+}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #D0E8F2;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #B6C9F0;
+  outline: none;
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+  width: 20%;
+  border-radius: 5%;
+ 
+  margin-left: 40%;
+  margin-bottom: 5%;
+  background-color: royalblue;
+
+}
+
+
+
+/* Add padding to container elements */
+
+
+.password{
+  position: relative;
+}
+.password i{
+  position: absolute;
+  top: 42px;
+  right: 16px;
+}
+
+.footer{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+.img{
+  width: 40%;
+  margin-right: 60px;
+  margin-top: 50px;
+  float: left;
+
+}
+.left{
+ float: left;
+ background-color: white;
+ display: inline-block;
+  padding: 10px 0px;
+  
+  margin:45px 150px ;
+ background-color: white;
+ border-radius: 5%;
+}
+.right{
+  display: inline-block;
+}
+.splitscreen{
+  display: inline-block;
+  margin:10px 40px 5px 40px ;
+}
+.icn{
+  padding: 0 5%;
+  margin: 25px 0px 5px 0px;
+    font-size: 30px;
+
+}
+.icn1{
+  color: #ffbb00;
+  margin-left: 20px;
+}
+.icn2{
+  color: #3b5998;
+}
+.icn3{
+  color:  #ea4335;
+}
+.icn4{
+  color:  #007bb6;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before 
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  
+  
+  &:after 
+  
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #fcfcfa; 
+  
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 600px) {
+  *{box-sizing: border-box}
+ .signupbtn {
+    width: 50%;
+   margin-left: 100px;
+   
+  }
+  .img {
+    display: none;
+  }
+  .left{
+    margin: 10px 30px;
+  }
+  .right {
+    margin: 30px 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  
+.signupbtn {
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 5%;
+  
+
+}
+.right{
+  margin:45px 100px ;
+
+}
+.left{
+  margin-right: 30px;
+  padding: 10px 0px;
+  margin:25px 15px ;
+ 
+}
+
+}
+
+
+
